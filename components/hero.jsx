@@ -31,24 +31,27 @@ const HeroSection = () => {
       <div className="space-y-6 text-center">
         <div className="space-y-6 mx-auto">
           <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl gradient-title animate-gradient">
-            Your AI Career Coach for
+            From Student to Job-Ready
             <br />
-            Professional Success
+            With the Right Mentor
           </h1>
           <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
-            Advance your career with personalized guidance, interview prep, and
-            AI-powered tools for job success.
+            Every student needs guidance before stepping into their career.
+  We connect learners with expert mentors and AI-driven tools to
+  prepare, practice, and succeed in the job market.
           </p>
         </div>
         <div className="flex justify-center space-x-4">
-          <Link href="https://jobgeniusai.vercel.app/sign-in?after_sign_in_url=https%3A%2F%2Fjobgeniusai.vercel.app%2Fonboarding&after_sign_up_url=https%3A%2F%2Fjobgeniusai.vercel.app%2Fonboarding&redirect_url=https%3A%2F%2Fjobgeniusai.vercel.app%2F">
+          <Link href="/find-mentor">
             <Button size="lg" className="px-8">
-              Get Started
+              Find Your Mentor
             </Button>
           </Link>
-          <Link href="https://www.linkedin.com/in/devgoyalg/">
-            <Button size="lg" variant="outline" className="px-8">
-              Watch Demo
+                        
+          
+          <Link href="/mentors">
+            <Button size="lg" className="px-8">
+              Mentors Profile
             </Button>
           </Link>
         </div>

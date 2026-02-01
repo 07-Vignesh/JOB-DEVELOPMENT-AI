@@ -70,14 +70,23 @@ export default function Quiz() {
   };
 
   const finishQuiz = async () => {
-    const score = calculateScore();
-    try {
-      await saveQuizResultFn(quizData, answers, score);
-      toast.success("Quiz completed!");
-    } catch (error) {
-      toast.error(error.message || "Failed to save quiz results");
-    }
-  };
+  const score = calculateScore();
+
+  // 👇 VERY IMPORTANT: make it plain
+  const plainQuestions = quizData.map((q) => ({
+    question: q.question,
+    options: q.options,
+    correctAnswer: q.correctAnswer,
+    explanation: q.explanation,
+  }));
+
+  try {
+    await saveQuizResultFn(plainQuestions, answers, score);
+    toast.success("Quiz completed!");
+  } catch (error) {
+    toast.error(error.message || "Failed to save quiz results");
+  }
+};
 
   const startNewQuiz = () => {
     setCurrentQuestion(0);
@@ -113,7 +122,7 @@ export default function Quiz() {
           </p>
         </CardContent>
         <CardFooter>
-          <Button onClick={generateQuizFn} className="w-full">
+          <Button onClick={() => generateQuizFn()} className="w-full">
             Start Quiz
           </Button>
         </CardFooter>

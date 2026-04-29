@@ -10,8 +10,19 @@ export async function matchMentors(studentProfile) {
 const prompt = `
 You are an expert AI career mentor matcher.
 
+<<<<<<< HEAD
 STUDENT PROFILE:
 ${JSON.stringify(studentProfile, null, 2)}
+=======
+  // Trigger background mentor matching - doesn't blocka
+  inngest.send({
+    name: "match.mentors",
+    data: {
+      userId: user.id,
+      studentProfile,
+    },
+  }).catch((err) => console.error("Failed to queue mentor matching:", err));
+>>>>>>> 19207973c11c91964d5558e2d0834039ca2e425f
 
 AVAILABLE MENTORS:
 ${JSON.stringify(mentors, null, 2)}

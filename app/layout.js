@@ -9,7 +9,7 @@ import { Toaster } from "sonner";
 const inter = Inter({ subsets: ["latin"]})
 
 export const metadata = {
-  title: "LinkEd - AI Career Coach",
+  title: "LinkED - AI Career Coach",
   description: "AI-powered career guidance platform.",
 
   icons: {

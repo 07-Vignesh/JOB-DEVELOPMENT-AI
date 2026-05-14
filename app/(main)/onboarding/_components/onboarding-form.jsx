@@ -76,8 +76,8 @@ const OnboardingForm = ({ industries }) => {
   const watchIndustry = watch("industry");
 
   return (
-    <div className="flex items-center justify-center bg-background">
-      <Card className="w-full max-w-lg mt-10 mx-2">
+    <div className="flex items-center justify-center min-h-screen bg-background px-2">
+      <Card className="w-full max-w-lg">
         <CardHeader>
           <CardTitle className="gradient-title text-4xl">
             Complete Your Profile

@@ -1,6 +1,6 @@
-# 🚀 Learnify Careers AI
+# 🚀 LinkED
 
-**Learnify Careers AI** is an AI-powered career development and mentorship platform that helps users learn in-demand skills, build professional resumes, and connect with mentors for real-world guidance.
+**LinkED** is an AI-powered career development and mentorship platform that helps users learn in-demand skills, build professional resumes, and connect with mentors for real-world guidance.
 
 ---
 
@@ -67,8 +67,8 @@ DATABASE_URL=
 GEMINI_API_KEY=
 🧩 Getting Started
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/learnify-careers-ai.git
-cd learnify-careers-ai
+git clone https://github.com/your-username/linked.git
+cd linked
 2️⃣ Install Dependencies
 npm install
 3️⃣ Run the App

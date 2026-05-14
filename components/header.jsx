@@ -14,7 +14,7 @@ const Header = () => {
         <Link href="/" className="-ml-6">
           <Image
             src={"/linked4bl-new.png"}
-            alt="Learnify Careers AI Logo"
+            alt="LinkED Logo"
             width={400}
             height={250}
             className="h-28 w-auto object-contain"
